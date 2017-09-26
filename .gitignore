@@ -231,6 +231,7 @@ _Pvt_Extensions
 
 # VSCode
 .dotnet/
+.vscode/
 
 tools/*
 !tools/packages.config
