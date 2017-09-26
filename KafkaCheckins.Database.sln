@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database", "src\Database\Database.sqlproj", "{75F39BA8-D591-4183-A355-628395C1D480}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Setup", "Setup", "{59AE6E98-5553-41CD-AC86-DEA91F812549}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeedApp", "src\SeedApp\SeedApp.csproj", "{B15C200A-5B1C-48FB-B5F5-6D23AEB8597F}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "KafkaCheckins.Database", "src\KafkaCheckins.Database\KafkaCheckins.Database.sqlproj", "{75F39BA8-D591-4183-A355-628395C1D480}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeedApp", "src\SeedApp\SeedApp.csproj", "{201A5B94-69D9-4C45-A82F-093A700A0CC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,13 +24,16 @@ Global
 		{75F39BA8-D591-4183-A355-628395C1D480}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75F39BA8-D591-4183-A355-628395C1D480}.Release|Any CPU.Build.0 = Release|Any CPU
 		{75F39BA8-D591-4183-A355-628395C1D480}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{B15C200A-5B1C-48FB-B5F5-6D23AEB8597F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B15C200A-5B1C-48FB-B5F5-6D23AEB8597F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B15C200A-5B1C-48FB-B5F5-6D23AEB8597F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B15C200A-5B1C-48FB-B5F5-6D23AEB8597F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{201A5B94-69D9-4C45-A82F-093A700A0CC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{201A5B94-69D9-4C45-A82F-093A700A0CC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{201A5B94-69D9-4C45-A82F-093A700A0CC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{201A5B94-69D9-4C45-A82F-093A700A0CC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{201A5B94-69D9-4C45-A82F-093A700A0CC7} = {59AE6E98-5553-41CD-AC86-DEA91F812549}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {39308959-070E-4990-83BF-A82E885F34EC}
