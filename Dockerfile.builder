@@ -3,7 +3,7 @@ FROM microsoft/windowsservercore
 SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop';"]
 
 RUN Install-PackageProvider -Name chocolatey -RequiredVersion 2.8.5.130 -Force; `
-    Install-Package -Name microsoft-build-tools -RequiredVersion 15.0.26228.0 -Force; `
+    Install-Package -Name microsoft-build-tools -RequiredVersion 14.0.25420.1 -Force; `
     Install-Package -Name netfx-4.5.2-devpack -RequiredVersion 4.5.5165101 -Force
 
 RUN Install-Package nuget.commandline -RequiredVersion 3.5.0 -Force; `
