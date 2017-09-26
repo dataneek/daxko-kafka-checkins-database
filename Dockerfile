@@ -1,5 +1,5 @@
 # escape=`
-FROM neekgreen/kafka-checkins-database-builder AS builder
+FROM kafka-checkins-database-builder AS builder
 
 WORKDIR C:\src
 COPY src\KafkaCheckins.Database\ .
